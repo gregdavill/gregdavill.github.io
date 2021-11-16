@@ -67,7 +67,7 @@ The PCBs from JLCPCB look great! this was the first time I used their service. T
 
 This worked out great! JLCPCB did not have any issue routing out the space between boards. (I kept around 2mm between PCBs.)
 
-{{< bundle-image name="images/img-asset.jpeg" alt="" >}}
+{{< bundle-image name="images/image-asset.jpeg" alt="" >}}
 
 {{< bundle-image name="images/IMG_2588.jpg" alt="" class="img-left" >}}
 
