@@ -50,6 +50,9 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
+
+  SEOTitle: "Greg Davill's Projects"
+  keyword: "Greg, Gregory, Davill, FLIR, Boson, electronics, macro photography, embedded systems, engineering"
   
   socialIcons:
       - name: Twitter
