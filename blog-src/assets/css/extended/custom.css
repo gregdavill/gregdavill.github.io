@@ -1,11 +1,11 @@
 .img-left {
-    max-width: 48%;
+    width: calc(50% - 0.5rem);
     float: left;
     margin-right: 0.5rem !important;
 }
 
 .img-right {
-    max-width: 48%;
+    width: calc(50% - 0.5rem);
     float: right;
     margin-left: 0.5rem !important;
 }

@@ -71,7 +71,7 @@ This worked out great! JLCPCB did not have any issue routing out the space betwe
 
 {{< bundle-image name="images/IMG_2588.jpg" alt="" class="img-left" >}}
 
-{{< bundle-image name="images/IMG_2237.jpg" alt="" class="img-right" >}}
+{{< bundle-image name="images/IMG_2237.jpg" alt="" class="img-left" >}}
 
 I soldered up a single PCB by hand, this is time consuming, but forces you to relax. (If you're not relaxed while placing small parts with tweezers they tend to fling out and shoot across the room :S ). Again hot-air and flux. You can never have too much flux, I use AMTECH NC-559-V2-TF that I buy in large 30cc tubes that you can pickup from Louis Rossmann. 
 

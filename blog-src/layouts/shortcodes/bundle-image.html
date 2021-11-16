@@ -2,16 +2,18 @@
 {{ $caption := .Get "caption"}}
 {{ $class := .Get "class"}}
 {{ with $.Page.Resources.GetMatch (.Get "name") }}
-  <figure>
+  <figure class="{{$class}}">
     <a href="{{.RelPermalink}}">
       <img
         srcset="
           {{ (.Resize "320x").RelPermalink }} 320w,
           {{ (.Resize "600x").RelPermalink }} 600w,
           {{ (.Resize "1200x").RelPermalink }} 2x"
-        src="{{ (.Resize "600x").RelPermalink }}" alt="{{$altText}}" class="{{$class}}" />
+        src="{{ (.Resize "600x").RelPermalink }}" alt="{{$altText}}" />
     </a>
+    {{- if $caption }}
     <figcaption><p>{{ $caption }}</p></figcaption>
+    {{- end}}
   </figure>
 {{ else }}
   could not find image
