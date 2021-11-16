@@ -1,0 +1,110 @@
+baseURL: "https://gregdavill.github.io/"
+languageCode: 'en-us'
+title: Greg Davill's Projects
+paginate: 5
+theme: hugo-PaperMod
+
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Categories
+                  url: categories/
+                  weight: 10
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  
+  socialIcons:
+      - name: Twitter
+        url: "https://twitter.com/gregdavill"
+      - name: github
+        url: "https://github.com/gregdavill"
+      - name: RsS
+        url: "index.xml"
+
+
+  homeInfoParams:
+        Title: "Hi There 👋"
+        Content: |
+          Welcome! 
+          I enjoy designing and building electronics. Here I'll document electronics projects I work on in a bit more detail than I can do on twitter. Basically this is just the same images I put on twitter, but with some more words padding them out. 
+          
+          Donations are never required, but are always appreciated. You can donate via [Github Sponsors](https://github.com/sponsors/gregdavill) ❤️
+          
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         # noClasses: false
+#         style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
