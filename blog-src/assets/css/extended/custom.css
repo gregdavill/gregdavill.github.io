@@ -1,0 +1,16 @@
+.img-left {
+    max-width: 48%;
+    float: left;
+    margin-right: 0.5rem !important;
+}
+
+.img-right {
+    max-width: 48%;
+    float: right;
+    margin-left: 0.5rem !important;
+}
+
+h2 {
+    display: block;
+    clear: both;
+}
