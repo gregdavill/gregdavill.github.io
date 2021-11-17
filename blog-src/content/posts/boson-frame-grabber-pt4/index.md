@@ -53,6 +53,11 @@ With these Tri-stable buffers, it's often useful to write on your schematic what
 {{< bundle-image name="images/pwr.png" alt="" class="img-left" >}}
 
 I'll mention the LDOs I used again. I used TLV733P parts, but it's a jelly bean part available from many different manufacturers. The package I need is the XSON style 1x1mm package, very challenging to solder. But the small size is essential to fitting everything on my 21x21mm PCB.  For reference, the capacitors next the regulators between are 0402!! Yes, they're small. I've seen raw sugar crystals bigger than these regulators.
+<br>
+<br>
+
+{{< bundle-image name="images/ldo.jpeg" alt="" class="" >}}
+{{< bundle-image name="images/ldo_solderpaste.jpeg" alt="" class="" >}}
 
 ## Check Leadtimes (I designed a v1_03 PCB)
 
