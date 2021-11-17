@@ -10,8 +10,7 @@
     margin-left: 0.5rem !important;
 }
 
-h2 {
-    display: block;
+h2, hr {
     clear: both;
 }
 
