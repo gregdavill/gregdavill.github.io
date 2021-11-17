@@ -54,6 +54,11 @@ params:
   comments: true
   hyvor: true 
 
+  editPost:
+        URL: "https://github.com/gregdavill/gregdavill.github.io/blob/main/blog-src/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
   SEOTitle: "Greg Davill's Projects"
   keyword: "Greg, Gregory, Davill, FLIR, Boson, electronics, macro photography, embedded systems, engineering"
   
