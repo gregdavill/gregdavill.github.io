@@ -1,5 +1,5 @@
 ---
-title: "Boson Frame Grabber Pt3"
+title: "Boson Frame Grabber Part 3"
 #description: <descriptive text here>
 date: 2018-06-22
 draft: false
