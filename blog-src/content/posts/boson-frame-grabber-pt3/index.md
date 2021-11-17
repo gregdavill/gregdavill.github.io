@@ -7,8 +7,8 @@ toc: false
 cover: 
     image: images/Db3zQfKV4AATwsY.jpg
     hidden: true
-tags: []
-categories: []
+tags: [boson, boson-frame-grabber, thermal]
+categories: [project]
 ---
 
 In this part I want to talk about the firmware, or code, this device will need in order to operate as I want. 

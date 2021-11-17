@@ -7,7 +7,8 @@ cover:
     image: images/IMG_2586.jpg
     hidden: true
     linkFullImages: true
-#draft: true
+tags: [boson, boson-frame-grabber, thermal]
+categories: [project]
 ---
 
 ## Background

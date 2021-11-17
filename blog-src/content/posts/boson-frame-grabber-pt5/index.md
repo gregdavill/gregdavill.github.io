@@ -8,8 +8,8 @@ cover:
     image: "images/IMG_5073.JPG"
     hidden: true
 description: Details about the SoC architecture in the Boson Frame Grabber
-tags: []
-categories: []
+tags: [boson, boson-frame-grabber, thermal]
+categories: [project]
 ---
 
 ## RTL Architecture

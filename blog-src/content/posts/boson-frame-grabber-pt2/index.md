@@ -6,8 +6,8 @@ draft: false
 toc: false
 cover:
     image: "images/IMG_2593.jpg"
-tags: []
-categories: []
+tags: [boson, boson-frame-grabber, thermal]
+categories: [project]
 ---
 
 In part 1, I discussed the version 1 prototype I had built. Just after ordering the PCBs for that project I decided to start thinking about miniaturizing the hardware. 

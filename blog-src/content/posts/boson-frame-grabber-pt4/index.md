@@ -7,8 +7,8 @@ toc: false
 cover:
     image: images/IMG_2698.jpg
     hidden: true
-tags: []
-categories: []
+tags: [boson, boson-frame-grabber, thermal]
+categories: [project]
 ---
 
 The new hardware for the Boson Frame Grabber will be based around the Lattice ECP5 family. Lattice make available a free IDE for this FPGA assuming you are not using a model with embedded SERDES. Since we are not, it's perfect for our application.
