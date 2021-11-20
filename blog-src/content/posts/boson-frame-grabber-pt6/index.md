@@ -7,6 +7,7 @@ toc: false
 cover:
     image: images/EU_ov9BUMAAhjK6.jpeg
     hidden: true
+    relative: true
 description: 
 tags: [boson, boson-frame-grabber, thermal, DiVA]
 categories: [project]

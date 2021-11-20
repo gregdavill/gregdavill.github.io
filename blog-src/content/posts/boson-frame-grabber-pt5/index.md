@@ -7,6 +7,7 @@ toc: false
 cover:
     image: "images/IMG_5073.JPG"
     hidden: true
+    relative: true
 description: Details about the SoC architecture in the Boson Frame Grabber
 tags: [boson, boson-frame-grabber, thermal]
 categories: [project]

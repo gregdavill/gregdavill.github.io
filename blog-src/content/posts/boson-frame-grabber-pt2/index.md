@@ -6,12 +6,16 @@ draft: false
 toc: false
 cover:
     image: "images/IMG_2593.jpg"
+    hidden: true
+    relative: true
 tags: [boson, boson-frame-grabber, thermal]
 categories: [project]
 ---
 
 In part 1, I discussed the version 1 prototype I had built. Just after ordering the PCBs for that project I decided to start thinking about miniaturizing the hardware. 
 <!--more-->
+{{< bundle-image name="images/IMG_2593.jpg" >}} 
+
 
 {{< bundle-image name="images/Screenshot from 2021-11-17 08-33-45.jpg" alt=""  class="img-right" >}}
 If I could integrate more parts into the FPGA I could reduce the BOM and PCB area required for the entire device. I was still looking at the iCE40 family and discovered the iCE40HX8K came in a 0.5mm BGA 8x8mm. This was small enough to fit directly behind the camera core!! (Notice the pocket on the back of the camera casting, it's just over 1mm deep)

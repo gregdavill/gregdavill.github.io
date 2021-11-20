@@ -56,6 +56,8 @@ params:
 
   cover:
     relative: true # when using page bundles set this to true
+    linkFullImages: true
+    
 
   editPost:
         URL: "https://github.com/gregdavill/gregdavill.github.io/blob/main/blog-src/content"

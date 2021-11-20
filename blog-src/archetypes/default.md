@@ -7,6 +7,7 @@ toc: false
 cover:
     image: ""
     hidden: true
+    relative: true
 description: 
 tags: []
 categories: []

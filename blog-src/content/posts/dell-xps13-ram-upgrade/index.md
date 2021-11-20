@@ -6,7 +6,8 @@ draft: false
 toc: false
 cover:
     image: "images/EyHyzIBU8AMH0oc.jpeg"
-    hidden: false
+    hidden: true
+    relative: true
 description: 
 tags: []
 categories: []
@@ -15,7 +16,6 @@ categories: []
 I'd recently bought a new XPS13 7390 (non 2-in-1) laptop. I had bought the 8GB variant, how hard could it be to upgrade?
 
 <!--more-->
----
 
 I use my laptop for KiCad PCB design, compiling embedded firmware, and FPGA synthesis. None of these really use that much RAM. But if you leave tabs open in Firefox or Chrome and also perform other work you're easily going to exceed 8GB. I've done so many times, on my ubuntu install the system basically grinds to a halt as the kernel scrambles to unload pages from DRAM into SWAP.
 

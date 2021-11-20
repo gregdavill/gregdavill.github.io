@@ -7,6 +7,7 @@ toc: false
 cover: 
     image: images/Db3zQfKV4AATwsY.jpg
     hidden: true
+    relative: true
 tags: [boson, boson-frame-grabber, thermal]
 categories: [project]
 ---

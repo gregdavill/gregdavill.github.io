@@ -7,6 +7,7 @@ toc: false
 cover:
     image: images/IMG_2698.jpg
     hidden: true
+    relative: true
 tags: [boson, boson-frame-grabber, thermal]
 categories: [project]
 ---
