@@ -1,11 +1,46 @@
 {{ if .Site.Params.hyvor }}
 <div id="hyvor-talk-view"></div>
 <script type="text/javascript">
+    dark_palette = {
+        accent: "#ffffff",
+        accentText: "#000000",
+        footerHeader: "#1b1818",
+        footerHeaderText: "#cac7c7",
+        box: "#232121",
+        boxText: "#ffffff",
+        boxLightText: "#aaaaaa",
+        backgroundText: "#ffffff"
+    }
+    light_palette = {
+        accent: "#659DBD",
+        accentText: "#FFFFFF",
+        footerHeader: "#FAFAFA",
+        footerHeaderText: "#484848",
+        box: "#FFFFFF",
+        boxText: "#111111",
+        boxLightText: "#AAAAAA",
+        backgroundText: "#111111"
+    }
+
+    var palette = light_palette;
+    if (document.body.className.includes("dark")) {
+        palette = dark_palette;
+    }
+        
     var HYVOR_TALK_WEBSITE = 5683;
     var HYVOR_TALK_CONFIG = {
         url: false,
-        id: '{{ .File.UniqueID }}'
-};
+        id: '{{ .File.UniqueID }}',
+        palette: palette
+    };
+
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            hyvor_talk.setPalette(light_palette);
+        } else {
+            hyvor_talk.setPalette(dark_palette);
+        }
+    })
 </script>
 <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed.js"></script>
 {{ end }}
