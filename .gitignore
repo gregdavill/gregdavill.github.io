@@ -1,4 +1,4 @@
-**/_gen
+
 *.lock
 
-public/*
+**/public/**
