@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: |
           pushd blog-src
-          hugo --buildDrafts --gc --verbose --minify
+          hugo --buildDrafts --gc --verbose --minify --templateMetrics --templateMetricsHints
           popd
 
       - name: Deploy
