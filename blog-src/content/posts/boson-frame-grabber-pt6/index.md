@@ -65,7 +65,7 @@ You do need to be careful with the 80-pin Hirose mezzanine connector. You really
 
 {{< bundle-image name="images/EAKTHIkVUAYIWzt.jpeg" class="" >}}
 
-The full sized HDMI connector is a bit rediculous given the size of the camera. So altough I typically don't like micro HDMI connectors, this was actually quite a nice fit for this camera 
+The full sized HDMI connector is a bit ridiculous given the size of the camera. So altough I typically don't like micro HDMI connectors, this was actually quite a nice fit for this camera
 
 {{< bundle-image name="images/D8S13nwVsAEKTH-.jpeg" class="img-left" >}}
 {{< bundle-image name="images/D7lGdWUUIAEWQjK.jpeg" class="img-left" >}}
@@ -100,7 +100,7 @@ As an example of what the device does here is a capture of it's output, with on-
 {{< bundle-image name="images/E8ztQJpVoAMnLXO.png" class="" >}}
 
 
-The current stable gateware is based on LiteX and Serv, LiteX is a collection of CPUs and peripherals along with plumbing to connect them all up. It's written ontop of migen, a method to describe and generate verilog from python. Serv is a serial RISCV implementation. It's interesting because it's quite small, therefore can run a quite a high frequency. However that higher frequency does need to overcome the fact that all instructions take at least 32 times longer to execute, because it's a serial CPU, it's internal data-path is only 1 bit wide, so to operate as a RISCV-RV32 it needs lots of extra cycles.
+The current stable gateware is based on LiteX and Serv, LiteX is a collection of CPUs and peripherals along with plumbing to connect them all up. It's written on top of migen, a method to describe and generate verilog from python. Serv is a serial RISCV implementation. It's interesting because it's quite small, therefore can run a quite a high frequency. However that higher frequency does need to overcome the fact that all instructions take at least 32 times longer to execute, because it's a serial CPU, it's internal data-path is only 1 bit wide, so to operate as a RISCV-RV32 it needs lots of extra cycles.
 
 Compared to raw verilog, going around and finding cores, then connecting them together in a SoC design. I find using LiteX way more productive, but there is a bit of a learning curve.
 

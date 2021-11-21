@@ -77,9 +77,9 @@ When reading data from the HyperRAM the signals operate in “Aligned” fashion
 
 ### [CMOS Capture Controller (ccc)]()
 
-This is a module that I have written. It consists of a set of wishbone registers, and logic that operates with the Camera Clock. The main function of this module is to support gating the data stream using v-sync to support capturing a complete frame. Due to it’s position in the design I have started to add new features into this module. including clocks_per_frame, pixels_per_frame, total_frames_seen.
+This is a module that I have written. It consists of a set of wishbone registers, and logic that operates with the Camera Clock. The main function of this module is to support gating the data stream using v-sync to support capturing a complete frame. Due to its position in the design I have started to add new features into this module, including clocks_per_frame, pixels_per_frame, total_frames_seen.
 
-pixels per frame enables the hardware to automatically determine which model of camera is connected a 320 or 640 model.
+pixels_per_frame enables the hardware to automatically determine which model of camera is connected a 320 or 640 model.
 
 ---
 
