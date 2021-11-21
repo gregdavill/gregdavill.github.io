@@ -22,13 +22,13 @@ The Boson is designed to stream images out automatically, the camera has a contr
 
 {{< bundle-image name="images/image-asset.png" alt="" class="" >}}
 
-I decided to add high speed RAM to the design in order to ensure I could reliably capture the video frame. I have used SD cards in the past and it is pretty common place for them to have variable delays when writing data blocks to them as they perform various internal operations. If I could get away with bypassing the RAM in the final design great, but I still wanted it in the hardware.
+I decided to add high speed RAM to the design in order to ensure I could reliably capture the video frame. I have used SD cards in the past and it is pretty common place for them to have variable delays when writing data blocks to them as they perform various internal operations. If I could get away with bypassing the RAM in the final design, great, but I still wanted it in the hardware.
 
-One benefit of using the RAM is that it doesn't matter what speed the SD card is running at this makes life easier. I can develop the modules that are needed to run the system then leave as much optimization till the end.
+One benefit of using the RAM is that it doesn't matter what speed the SD card is running at – this makes life easier. I can develop the modules that are needed to run the system then leave as much optimization till the end.
 
 ## Verilog & PicoSoC
 
-Code that describes hardware. As mentioned this is my first FPGA project. I had already selected the iCE40HX8K as it was the largest ICE40 in the smallest package. This particular FPGA has 8k LUTs. I didn't know how many LUTs my design would require. Is 8k alot? What is a LUT? I'm not going to go into FPGA basics, but from my experience 8k is enough to implement a RISCV 32 bit processor and a handful of basic peripherals. It is enough to get your feet wet in a real FPGA project!
+Code that describes hardware. As mentioned this is my first FPGA project. I had already selected the iCE40HX8K as it was the largest ICE40 in the smallest package. This particular FPGA has 8k LUTs. I didn't know how many LUTs my design would require. Is 8k a lot? What is a LUT? I'm not going to go into FPGA basics, but from my experience 8k is enough to implement a RISCV 32 bit processor and a handful of basic peripherals. It is enough to get your feet wet in a real FPGA project!
 
 {{< bundle-image name="images/Db2KUwcVwAAS-B8.jpg" alt="" class="" >}} 
 
@@ -56,7 +56,7 @@ I had started working on a hyperRAM module with my first prototype hardware. How
 
 The biggest benefit of using a softcore processor in my design in my opinion was the ability to leverage existing open source software projects. [FatFs](http://elm-chan.org/fsw/ff/00index_e.html) is one of those projects, I've used it on countless projects in the past. The example projects include a "barebones" implementation of the low level control using bit-banged IO. In order to get this to work I just had to extend the GPIO registers from write only to R/W and map them to the SD card pinout in verilog. With those small changes* I was able to write a file to the SD card!
 
-*I spent an entire evening scratching my head as to why FatFs wasn't working. As soon as I looked at the memory-map output from GCC I worked out why, I think one of the goals of PicoSoC is to be simple enough to get up and running fast. Because of this the example firmware (what my code was based off) only utilized the RAM on the stack, the linker never declared where to store static/global variables, and the startup code never initialized these. I did a few unspeakable linker-hacks to get it to work initally. A better solution is to use the code provided by [Miodrag Milanović](https://github.com/cliffordwolf/picorv32/pull/61), Who did a great job porting microPython to the picoSoC.
+I spent an entire evening scratching my head as to why FatFs wasn't working. As soon as I looked at the memory-map output from GCC I worked out why, I think one of the goals of PicoSoC is to be simple enough to get up and running fast. Because of this the example firmware (what my code was based off) only utilized the RAM on the stack, the linker never declared where to store static/global variables, and the startup code never initialized these. I did a few unspeakable linker-hacks to get it to work initally. A better solution is to use the code provided by [Miodrag Milanović](https://github.com/cliffordwolf/picorv32/pull/61), Who did a great job porting microPython to the picoSoC.
 ## Pick Your Battles
 
 Now with each hardware component tested to be working I knew the hardware should be capable of capturing an image from the camera, I just had to tell it how to do it.
