@@ -72,7 +72,7 @@ params:
         url: "https://twitter.com/gregdavill"
       - name: github
         url: "https://github.com/gregdavill"
-      - name: RsS
+      - name: RSS
         url: "index.xml"
 
 
