@@ -136,7 +136,7 @@ If you wish to re-populate a BGA part that you've removed you really do need to 
 {{< bundle-image name="images/EuQE37MVoAAyr15.jpeg" class="img-left" >}}
 {{< bundle-image name="images/Ewa01N8VoAE2qfR.jpeg" class="img-left" >}}
 
-The frist step is to remove all the existing solder from the IC, and clean off all residue and flux.
+The first step is to remove all the existing solder from the IC, and clean off all residue and flux.
 {{< bundle-image name="images/Ewa1z3fVoAQN965.jpeg" class="img-left" >}}
 {{< bundle-image name="images/Ewa3mKFVcAEcpjY.jpeg" class="img-left" >}}
 
@@ -209,9 +209,9 @@ And strap resistor moved, so hopefully the BIOS will know there is 16G present.
 
 {{< bundle-image name="images/EyIEvTcVoAAuOXy.jpeg" >}}
 
-## Is that is?
+## Is that it?
 
-A small strike of panic as I pressed the power button for the first time after putting most of the machine back together. In order to work on the main-board I had removed the CMOS battery. turns out the XPS will take a solid 30-60s to boot up after the CMOS battery has been removed and replaced.
+A small strike of panic as I pressed the power button for the first time after putting most of the machine back together. In order to work on the main-board I had removed the CMOS battery. Turns out the XPS will take a solid 30-60s to boot up after the CMOS battery has been removed and replaced.
 
 Phew.
 
@@ -233,7 +233,7 @@ With an OS booted I was pretty sure that the ICs were in fact genuine. But to en
 
 {{< bundle-image name="images/EyIShwfUUAAptJ6.jpeg" >}}
 
-It passed through 4 passes of all it's tests without issue! This shows that all the memory space is functioning and my RAM upgrade was a success!
+It passed through 4 passes of all its tests without issue! This shows that all the memory space is functioning and my RAM upgrade was a success!
 
 # Conclusion 
 
