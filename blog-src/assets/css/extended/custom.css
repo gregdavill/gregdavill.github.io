@@ -13,3 +13,7 @@
 h2, hr {
     clear: both;
 }
+
+:root {
+    --main-width: 800px;
+}
