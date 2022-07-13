@@ -350,7 +350,7 @@ I think a new controller board might include either an ESP32 or ESP32-S2 chip, a
 Mapping of the pixels into a coordinate space would be very useful. I think this probably isn’t actually too difficult, but just requires wrapping my head around matrix multiplications to move the grid of pixels on each face from a 2d plane into position in 3d space around the icosahedron, then each pixels' location can be recorded and used in a lookup table fashion to create interesting animations and effects.
 Charlie and his new favorite toy
 
-{{< bundle-image name="images/d20.gif" alt="" class="" >}}
+![](images/d20.gif)
 
 ---
 
