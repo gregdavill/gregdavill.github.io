@@ -56,7 +56,8 @@ params:
 
   cover:
     relative: true # when using page bundles set this to true
-    linkFullImages: true
+    linkFullImages: false
+
     
 
   editPost:
@@ -83,6 +84,13 @@ params:
           I enjoy designing and building electronics. Here I'll document electronics projects I work on in a bit more detail than I can do on twitter. Basically this is just the same images I put on twitter, but with some more words padding them out. 
           
           Donations are never required, but are always appreciated. You can donate via [Github Sponsors](https://github.com/sponsors/gregdavill) ❤️
+
+imaging:
+  anchor: Smart
+  bgColor: '#000000'
+  hint: photo
+  quality: 95
+  resampleFilter: Lanczos
           
 taxonomies:
     category: categories
