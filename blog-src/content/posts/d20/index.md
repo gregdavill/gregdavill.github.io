@@ -114,8 +114,11 @@ I attempted to assemble a board bey placing LEDs at 90 degrees, but ultimately t
 Also worth noting that because I did not have the FFC cables or connectors at this point, and I had not written the code to drive the display, I didn’t even attempt at powering this on. Maybe you can sense the foreshadowing, in this observation.
 
 
-{{< bundle-image name="images/012.jpeg" alt="" class="img-left" >}}
-{{< bundle-image name="images/013.jpeg" alt="" class="img-right" >}}
+
+{{< gallery >}}
+{{< bundle-image name="images/012.jpeg" alt="" class="" >}}
+{{< bundle-image name="images/013.jpeg" alt="" class="" >}}
+{{< /gallery >}}
 
 ## Panels Take two
 
@@ -127,14 +130,19 @@ Everything else about the panels seemed fine at that time, so I quickly adjusted
 
 Let's switch gears to the enclosure, with a design for the panels done I can export a 3d model from KiCad and start looking at how they’ll be integrated into an enclosure. I did have to model up a custom LED. Which was very useful to see how everything would be fitting.
 
-{{< bundle-image name="images/014.png" alt="" class="img-left" >}}
-{{< bundle-image name="images/015.png" alt="" class="img-right" >}}
+{{< gallery >}}
+{{< bundle-image name="images/014.png" alt="" class="" >}}
+{{< bundle-image name="images/015.png" alt="" class="" >}}
+{{< /gallery >}}
 
 The panels fit great, and the bezels looked thick enough to be manufacturable, now it was just a matter of going through and cutting away as much of the enclosure as possible. Nylon MJF prints are priced by they’re total size and how much total material ends up in the final print.
 
 {{< bundle-image name="images/016.png" alt="" class="" >}}
-{{< bundle-image name="images/017.png" alt="" class="img-left" >}}
-{{< bundle-image name="images/018.png" alt="" class="img-right" >}}
+{{< gallery >}}
+{{< bundle-image name="images/017.png" alt="" class="" >}}
+{{< bundle-image name="images/018.png" alt="" class="" >}}
+{{< /gallery >}}
+
 
 With regard to powering the device I managed to fit a Sony mirror-less camera battery in the enclosure, and even more surprising I found a compatible 3-pin terminal that actually fit the battery! (That’s one of the challenges of using this style of battery).
 
@@ -144,12 +152,14 @@ I needed a way to insert/remove the battery, and I’d determined it was easiest
 
 I even tried to be clever and add locking features to the 3d print to retain the controller PCB. Fusions “look-at” [face] option and the section-analysis were vital in getting this designed.
 
-{{< bundle-image name="images/020.png" alt="" class="img-left" >}}
-{{< bundle-image name="images/021.png" alt="" class="img-right" >}}
-{{< bundle-image name="images/022.png" alt="" class="img-left" >}}
-{{< bundle-image name="images/023.png" alt="" class="img-right" >}}
-{{< bundle-image name="images/024.png" alt="" class="img-left" >}}
-{{< bundle-image name="images/025.png" alt="" class="img-right" >}}
+{{< gallery >}}
+{{< bundle-image name="images/020.png" alt="" class="" >}}
+{{< bundle-image name="images/021.png" alt="" class="" >}}
+{{< bundle-image name="images/022.png" alt="" class="" >}}
+{{< bundle-image name="images/023.png" alt="" class="" >}}
+{{< bundle-image name="images/024.png" alt="" class="" >}}
+{{< bundle-image name="images/025.png" alt="" class="" >}}
+{{< /gallery >}}
 
 With the two halves designed, and checked multiple times over a few days I was ready to order them. I don’t really know too many options around for quickly prototyping a Nylon MJF part, so I just opted for shapeways. I opted for their higher detail service, with express options. The order totalled $167.68 USD. I was hoping there wasn’t any issues with the design I’d overlooked, especially considering this was my first time designing a Nylon MJF part.
 
@@ -170,8 +180,10 @@ The ice40 FPGA offloads all the real-time display multiplexing, it outputs pixel
 On the power supply front, it would have been nice to have a battery charger, but these Sony batteries are 7.4V nominal, which makes charging a tad more complex than just dropping in a single chip solution. I did still want tho device powered over USB when programming/debugging, so I added an ideal diode controller, which efficiently combines two input power sources. I also added a basic under voltage monitor to the battery to ensure that I didn’t over discharge the LiPo cells (Although I’ve now discovered that they might have this built in.)
 
 {{< bundle-image name="images/027.jpg" alt="" class="" >}}
-{{< bundle-image name="images/028.jpg" alt="" class="img-left" >}}
-{{< bundle-image name="images/029.jpg" alt="" class="img-right" >}}
+{{< gallery >}}
+{{< bundle-image name="images/028.jpg" alt="" class="" >}}
+{{< bundle-image name="images/029.jpg" alt="" class="" >}}
+{{< /gallery >}}
 
 This is the model I’d created for the controller. This is straight out of KiCad, and was essential to ensure a good mechanical compatibility between the PCBA’s and enclosure.
 
@@ -179,8 +191,10 @@ This is the model I’d created for the controller. This is straight out of KiCa
 
 ## Assembly Stage
 
-{{< bundle-image name="images/030.jpg" alt="" class="img-left" >}}
-{{< bundle-image name="images/031.jpg" alt="" class="img-right" >}}
+{{< gallery >}}
+{{< bundle-image name="images/030.jpeg" alt="" class="" >}}
+{{< bundle-image name="images/031.jpg" alt="" class="" >}}
+{{< /gallery >}}
 
 *Circuit boards arrived on Friday 18th Oct.*
 
@@ -206,10 +220,13 @@ I also built up a controller PCB. Also using solderpaste + reflow oven. And the 
 
 ## Enclosure Test-fit
 
-{{< bundle-image name="images/035.jpg" alt="" class="img-left" >}}
-{{< bundle-image name="images/036.jpg" alt="" class="img-right" >}}
-{{< bundle-image name="images/037.jpg" alt="" class="img-left" >}}
-{{< bundle-image name="images/038.jpeg" alt="" class="img-right" >}}
+{{< gallery >}}
+{{< bundle-image name="images/035.jpg" alt="" class="" >}}
+{{< bundle-image name="images/036.jpg" alt="" class="" >}}
+{{< bundle-image name="images/037.jpg" alt="" class="" >}}
+{{< bundle-image name="images/038.jpeg" alt="" class="" >}}
+{{< /gallery >}}
+
 {{< bundle-image name="images/039.jpg" alt="" class="" >}}
 
 The enclosure looked great! The texture from the MJF was a perfect fit with the look of the PCB/LEDs. The tolerance between the parts I had estimated perfectly. The magnets fit in both parts (One problem was I couldn’t actually get the magnets out.)
@@ -273,8 +290,11 @@ Note I did try and find a part with different pinout that would match my PCB. Un
 
 My issue was that I had swapped G/S, the two smallest pads. My plan to rework these was to rotate the part such that the G/S pads were in correct orientation. Then with a small length of magnet wire connect the, now displaced, drain back to the PCB.
 
-{{< bundle-image name="images/048.jpg" alt="" class="img-left" >}}
-{{< bundle-image name="images/049.jpg" alt="" class="img-right" >}}
+{{< gallery >}}
+{{< bundle-image name="images/048.jpg" alt="" class="" >}}
+{{< bundle-image name="images/049.jpg" alt="" class="" >}}
+{{< /gallery >}}
+
 {{< bundle-image name="images/050.jpg" alt="" class="" >}}
 {{< bundle-image name="images/051.jpg" alt="" class="" >}}
 

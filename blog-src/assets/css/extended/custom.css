@@ -17,3 +17,15 @@ h2, hr {
 :root {
     --main-width: 800px;
 }
+
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    align-items: stretch;
+    }
+  
+  .grid img {
+    border: 1px solid var(--theme);
+    max-width: 100%;
+  }
