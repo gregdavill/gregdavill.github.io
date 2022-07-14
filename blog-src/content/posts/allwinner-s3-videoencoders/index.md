@@ -1,5 +1,5 @@
 ---
-title: "Allwinner S3 Video Encoders"
+title: "Allwinner S3 SoC: Accelerated h.264"
 #description: <descriptive text here>
 date: 2022-07-12T21:00:00+10:30
 draft: false
