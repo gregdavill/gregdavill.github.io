@@ -30,9 +30,9 @@ What was appealing to me for use with the Boson thermal camera is the compact BG
 Interestingly the CPU used inside is the same as the V3/V3s/S3, there is mainline kernel and uboot support. This is good because I'm very much an embedded Linux beginner.
 
 After following the reference design provided by SOChip, along with some other great OSHW projects:
-* [https://github.com/Jana-Marie/OtterCam-s3](OtterCam-s3)
-* [https://github.com/Ottercast/OtterCastAudioV2](OtterCast) 
-* [https://github.com/OLIMEX/S3-OLinuXino](S3-OLinuXino)
+* [OtterCam-s3](https://github.com/Jana-Marie/OtterCam-s3)
+* [OtterCast](https://github.com/Ottercast/OtterCastAudioV2)
+* [S3-OLinuXino](https://github.com/OLIMEX/S3-OLinuXino)
 
 I had a custom board designed. After some quick assembly I had a board that powered up.
 Soon after that with a custom buildroot project, and had linux 5.18 booted on the board. 🙌
