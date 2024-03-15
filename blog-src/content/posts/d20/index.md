@@ -137,10 +137,10 @@ Let's switch gears to the enclosure, with a design for the panels done I can exp
 
 The panels fit great, and the bezels looked thick enough to be manufacturable, now it was just a matter of going through and cutting away as much of the enclosure as possible. Nylon MJF prints are priced by they’re total size and how much total material ends up in the final print.
 
-{{< bundle-image name="images/016.png" alt="" class="" >}}
+{{< bundle-image name="images/016.jpg" alt="" class="" >}}
 {{< gallery >}}
-{{< bundle-image name="images/017.png" alt="" class="" >}}
-{{< bundle-image name="images/018.png" alt="" class="" >}}
+{{< bundle-image name="images/017.jpg" alt="" class="" >}}
+{{< bundle-image name="images/018.jpg" alt="" class="" >}}
 {{< /gallery >}}
 
 
@@ -148,7 +148,7 @@ With regard to powering the device I managed to fit a Sony mirror-less camera ba
 
 I needed a way to insert/remove the battery, and I’d determined it was easiest to remove a section of the icosahedron with 5 panels in it, these 5 panels would have a single ribbon cable running between it and the base. The sections would have asymmetric locking features and magnets, so it could be securely fastened and removed.
 
-{{< bundle-image name="images/019.png" alt="" class="" >}}
+{{< bundle-image name="images/019.jpg" alt="" class="" >}}
 
 I even tried to be clever and add locking features to the 3d print to retain the controller PCB. Fusions “look-at” [face] option and the section-analysis were vital in getting this designed.
 
